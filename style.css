@@ -17,10 +17,11 @@ header {
 nav {
   margin-top: 20px; /* spacing from logo/title */
 }
+
 header h1 {
-  
-  font-size: 3.5rem; /* Increase this value to make it bigger */
+  font-size: 3.5rem; 
 }
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -44,6 +45,50 @@ nav a:hover {
 section {
   padding: 40px;
   text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between image and text */
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+
+.about-photo img {
+  width: 300px; /* adjust as needed */
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 10px 10px 10px 10px; /* top, right, bottom, left */
+}
+
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-photo img {
+    width: 80%;
+  }
+
+  .about-text {
+    text-align: center;
+  }
 }
 
 #contact {
@@ -96,7 +141,7 @@ section {
   width: 100%;
   max-width: 6000px;
   margin: 0 auto 40px;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 8 / 3;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -120,8 +165,8 @@ section {
 
 .album {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -193,15 +238,16 @@ section {
 
 .track-thumbnail img {
   width: 100%;
-  height: auto;
+  height: 300px; /* fixed height for consistency */
   object-fit: cover;
   border-radius: 12px;
 }
 
+/*
 .track-thumbnail:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(151, 16, 16, 0.4);
-}
+}*/
 
 /* Audio player */
 .track audio {
@@ -314,8 +360,6 @@ section {
   transition: transform 0.4s ease;
 }
 
-
-
 .caption {
   color: #bbb;
   font-style: italic;
@@ -417,3 +461,69 @@ header > * {
   position: relative;
   z-index: 1;
 }
+
+.contact-info p,
+.contact-info a {
+  color: #ffffff; /* or any color you prefer */
+}
+
+#projects {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.project {
+  background-color: #701010;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.project a {
+  color: #ffffff6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

@@ -16,34 +16,34 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#music">Music</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about" class="scroll-fade">
-    <h2 class="scroll-fade">About Me</h2>
+<section id="about" class="scroll-fade" class="container">
+  <h2 class="scroll-fade">About Me</h2>
 
-    <!-- Animated Intro -->
-    <p class="animated-intro scroll-fade">A self-taught musician on a journey through sound.</p>
+  <!-- Animated Intro -->
+  <p class="animated-intro scroll-fade">A self taught composer on a journey through music.</p>
 
-    <!-- Artist Image -->
-    <div class="about-photo scroll-fade">
-      <img src="assets/rostum.jpg" alt="Rostum Kawai" class="scroll-fade" />
+  <!-- Container for image and bio -->
+  <div class="about-content scroll-fade">
+    <div class="about-photo">
+      <img src="assets/rostum.jpg" alt="Rostum Kawai" />
     </div>
 
-    <!-- Biography -->
-    <p class="fade-in-paragraph scroll-fade">
-      I'm Rostum Kawai, a self-taught musician and composer driven by passion and creativity. My musical journey began with the piano, where I taught myself to play and express emotions through melodies. Over time, I explored digital composition using FL Studio, which opened new doors for experimentation and sound design.
-    </p>
-    <p class="fade-in-paragraph scroll-fade">
-      Since then, I've composed original tracks for various short films and indie games, blending classical influences with modern electronic elements. Music for me is not just sound—it's a story, a feeling, a world. I continue to grow as an artist with every project, always exploring new sounds and pushing creative boundaries.
-    </p>
-  </section>
+    <div class="about-text">
+      <p class="fade-in-paragraph">I'm Rostum Kawai, a self-taught composer and composer driven by passion and creativity. My musical journey began with the piano, where I taught myself to play and express emotions through melodies. Over time, I explored digital composition using FL Studio, which opened new doors for experimentation and sound design.</p>
+      <p class="fade-in-paragraph">Since then, I've composed original tracks for various short films and indie games, blending classical influences with modern electronic elements. Music for me is not just sound—it's a story, a feeling, a world. I continue to grow as an artist with every project, always exploring new sounds and pushing creative boundaries.</p>
+    </div>
+  </div>
+</section>
   
-<audio id="bg-music" loop>
-  <source src="assets/bgmusic.mp4" type="audio/mpeg" />
+<audio id="bg-music" autoplay loop>
+  <source src="bgmusic.mp4" type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>
 
@@ -96,8 +96,8 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track1.jpg" alt="Track 1 Thumbnail" />
         </div>
-        <audio controls>
-          <source src="assets/bgmusic.mp4" type="audio/mpeg" />
+        <audio class="track-audio" controls>
+          <source src="bgmusic.mp4" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <p class="description scroll-fade">Track 1 Description here</p>
@@ -107,7 +107,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track2.jpg" alt="Track 2 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track2.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -118,7 +118,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track3.jpg" alt="Track 3 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track3.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -129,7 +129,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track4.jpg" alt="Track 4 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track4.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -140,7 +140,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track5.jpg" alt="Track 5 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track5.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -151,7 +151,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track6.jpg" alt="Track 6 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track6.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -162,7 +162,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track7.jpg" alt="Track 7 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track7.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -173,7 +173,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track8.jpg" alt="Track 8 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track8.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -184,7 +184,7 @@
         <div class="track-thumbnail scroll-fade">
           <img src="assets/track9.jpg" alt="Track 9 Thumbnail" />
         </div>
-        <audio controls>
+        <audio class="track-audio" controls>
           <source src="assets/track9.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
@@ -192,6 +192,37 @@
       </div>
     </div>
   </section>
+
+<section id="projects" class="scroll-fade">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-list">
+    <div class="project">
+      <h3>Attack on Titan Fan Animation</h3>
+      <p>Worked on a fan animation for <em>Attack on Titan</em> that reached over 1 million views.</p>
+      <div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/qW8aD1m9X48"
+    title="Attack on Titan Fan Animation"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+    </div>
+    <div class="project">
+      <h3>Univenture</h3>
+      <p>Worked on a novel game titled <em>Univenture</em>.</p>
+    </div>
+    <div class="project">
+      <h3>The Chair</h3>
+      <p>Contributed to the short movie <em>The Chair</em>.</p>
+      <a href="https://www.instagram.com/reel/DFxae2LM8c4/?utm_source=ig_web_button_share_sheet" target="_blank">Watch on Instagram</a>
+    </div>
+  </div>
+</section>
+
+
 
   <section id="gallery" class="scroll-fade">
     <h2 class="scroll-fade">Gallery</h2>
@@ -235,8 +266,47 @@
       <a href="https://open.spotify.com/artist/63Hy3ajCYK1jnerDcbYfGh?si=9114c553d2704ceb" target="_blank" aria-label="Spotify" class="scroll-fade">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/spotify.svg" alt="Spotify" />
       </a>
+      <a href="mailto:rostum1akio@gmail.com" target="_blank" aria-label="Email" class="scroll-fade">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Email" />
+    </a>
     </div>
+
+    <div class="contact-info scroll-fade" style="margin-top: 20px; text-align: center;">
+    <p>Email:  <a href="mailto:rostum1akio@gmail.com">rostum1akio@gmail.com</a></p>
+    <p>Phone:  <a href="tel:+1234567890">+81-70-2811-1811</a></p>
+  </div>
   </section>
+
+  
+
+  <script>
+  const bgMusic = document.getElementById("bg-music");
+  const trackAudios = document.querySelectorAll(".track-audio");
+
+  trackAudios.forEach((track) => {
+    track.addEventListener("play", () => {
+      // Pause background music if it's playing
+      if (!bgMusic.paused) {
+        bgMusic.pause();
+        bgMusic.currentTime = 0;
+      }
+
+      // Pause other tracks except the one playing
+      trackAudios.forEach((otherTrack) => {
+        if (otherTrack !== track) {
+          otherTrack.pause();
+          otherTrack.currentTime = 0;
+        }
+      });
+    });
+
+    // Optional: Resume background music when a track ends
+    track.addEventListener("ended", () => {
+      bgMusic.play();
+    });
+  });
+</script>
+
 
   <footer class="scroll-fade">
     <p>&copy; 2025 ROSTUM KAWAI</p>
