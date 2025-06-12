@@ -8,6 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+  <!-- HEAD SECTION -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 </head>
 <body>
   <header>
@@ -23,7 +29,8 @@
     </nav>
   </header>
 
-<section id="about" class="scroll-fade" class="container">
+<section id="about" class="scroll-fade container">
+
   <h2 class="scroll-fade">About Me</h2>
 
   <!-- Animated Intro -->
@@ -36,162 +43,126 @@
     </div>
 
     <div class="about-text">
-      <p class="fade-in-paragraph">I'm Rostum Kawai, a self-taught composer and composer driven by passion and creativity. My musical journey began with the piano, where I taught myself to play and express emotions through melodies. Over time, I explored digital composition using FL Studio, which opened new doors for experimentation and sound design.</p>
+      <p class="fade-in-paragraph">I'm Rostum Kawai, a self-taught composer driven by passion and creativity. My musical journey began with the piano, where I taught myself to play and express emotions through melodies. Over time, I explored digital composition using FL Studio, which opened new doors for experimentation and sound design.</p>
       <p class="fade-in-paragraph">Since then, I've composed original tracks for various short films and indie games, blending classical influences with modern electronic elements. Music for me is not just sound—it's a story, a feeling, a world. I continue to grow as an artist with every project, always exploring new sounds and pushing creative boundaries.</p>
     </div>
   </div>
 </section>
   
 <audio id="bg-music" autoplay loop>
-  <source src="bg.wav" type="audio/mpeg" />
+  <source src="bg.wav" type="audio/wav" />
   Your browser does not support the audio element.
 </audio>
 
   <section id="music" class="scroll-fade">
     <h2 class="scroll-fade">Music</h2>
 
-    <h3 class="section-subtitle scroll-fade">Spotify</h3>
 
-    <!-- Spotify Widget -->
+ <h3 class="section-subtitle scroll-fade">My Tracks</h3>
+<div class="tracks-container">
+
+ <div class="waveform track scroll-fade" data-url="assets/music/Autmun C-roll.wav">
+  <div class="controls">
+    <button class="play-btn" data-index="0"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform1"></div>
+    <span class="track-duration" id="duration1">--:--</span>
+  </div>
+  <p class="description scroll-fade">“Behind tha Hill” – A laid-back beat echoing hidden tales and hazy hillsides.</p>
+</div>
+
+
+
+ <div class="waveform track scroll-fade" data-url="assets\music\Battle of Heaven and Hell.wav">
+  <div class="controls">
+    <button class="play-btn" data-index="1"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform2"></div>
+    <span class="track-duration" id="duration2">--:--</span>
+  </div>
+  <p class="description scroll-fade">
+    “Battle of Heaven and Hell” – A dramatic clash of sonic intensity and divine melody.</p>
+</div>
+
+<div class="waveform track scroll-fade" data-url="assets/music/Behind tha hill.mp3">
+  
+  <div class="controls">
+    <button class="play-btn" data-index="2"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform3"></div>
+    <span class="track-duration" id="duration3">--:--</span>
+  </div>
+  <p class="description scroll-fade">“Behind tha Hill” – A laid-back beat echoing hidden tales and hazy hillsides.</p>
+</div>
+
+<div class="waveform track scroll-fade" data-url="assets/music/behind that hill.wav">
+  
+  <div class="controls">
+    <button class="play-btn" data-index="3"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform4"></div>
+    <span class="track-duration" id="duration4">--:--</span>
+  </div>
+  <p class="description scroll-fade">“Behind That Hill” – A reflective variation with a deeper emotional tone.</p>
+</div>
+
+<div class="waveform track scroll-fade" data-url="assets\music\CagesOfFeaathersTeaserwav.wav">
+  
+  <div class="controls">
+    <button class="play-btn" data-index="4"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform5"></div>
+    <span class="track-duration" id="duration5">--:--</span>
+  </div>
+  <p class="description scroll-fade">“Cages of Feathers (Teaser)” – A mysterious, airy teaser that leaves you intrigued.</p>
+</div>
+
+<div class="waveform track scroll-fade" data-url="assets/music/DewTheMountains.wav">
+  
+  <div class="controls">
+    <button class="play-btn" data-index="5"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform6"></div>
+    <span class="track-duration" id="duration6">--:--</span>
+  </div>
+  <p class="description scroll-fade">“Dew The Mountains” – Gentle ambient textures inspired by mountain mists.</p>
+</div>
+
+<div class="waveform track scroll-fade" data-url="assets/music/Droplet_Mix_3.wav">
+  <div class="controls">
+    <button class="play-btn" data-index="6"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform7"></div>
+    <span class="track-duration" id="duration7">--:--</span>
+  </div>
+  <p class="description scroll-fade">“Droplet Mix 3” – An evolving rhythm with soft percussive layers and water-like tones.</p>
+</div>
+
+<div class="waveform track scroll-fade" data-url="assets/music/EFFORTLESS_2.wav">
+  
+  <div class="controls">
+    <button class="play-btn" data-index="7"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform8"></div>
+    <span class="track-duration" id="duration8">--:--</span>
+  </div>
+  <p class="description scroll-fade">“EFFORTLESS 2” – Confident, slick, and smooth — a track that lives up to its name.</p>
+</div>
+
+<div class="waveform track scroll-fade" data-url="assets/music/U dont want this.wav">
+  
+  <div class="controls">
+    <button class="play-btn" data-index="8"><i class="fa-solid fa-play"></i></button>
+    <div class="wave" id="waveform9"></div>
+    <span class="track-duration" id="duration9">--:--</span>
+  </div>
+  <p class="description scroll-fade">“U Don’t Want This” – A gritty, assertive anthem with sharp attitude and energy.</p>
+</div>
+
+
+ <h3 class="section-subtitle scroll-fade">Spotify</h3>
+<!-- Spotify Widget -->
     <div class="spotify-embed scroll-fade">
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/63Hy3ajCYK1jnerDcbYfGh?utm_source=generator&theme=0"
-       width="10%" 
-       height="10" 
+       width="100%" 
+  height="152"
        frameBorder="0" 
        allowfullscreen="" 
        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
        loading="lazy"></iframe>
     </div>
-
-<h3 class="section-subtitle">Albums</h3>
-<div class="spotify-albums">
-  <a href="https://open.spotify.com/album/3jnCqjIMBMti4e5kfVcb46" target="_blank" class="album">
-    <img src="assets/album1.jpg" alt="Album 1">
-    <div class="overlay">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Icon">
-    </div>
-  </a>
-
-  <a href="https://open.spotify.com/album/1dPptSQ7NoaHB8r0Bq4etg" target="_blank" class="album">
-    <img src="assets/album1.jpg" alt="Album 2">
-    <div class="overlay">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Icon">
-    </div>
-  </a>
-
-  <a href="https://open.spotify.com/album/6eQiD59xxKLfYBMuru7njv" target="_blank" class="album">
-    <img src="assets/album1.jpg" alt="Album 3">
-    <div class="overlay">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Icon">
-    </div>
-  </a>
-</div>
-
-
-
-
-    <h3 class="section-subtitle scroll-fade">My Tracks</h3>
-    <div class="tracks-container">
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track1.jpg" alt="Track 1 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/Autmun C-roll.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 1 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track2.jpg" alt="Track 2 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/Battle of Heaven and Hell.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 2 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track3.jpg" alt="Track 3 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/Behind tha hill.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 3 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track4.jpg" alt="Track 4 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/behind that hill.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 4 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track5.jpg" alt="Track 5 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/CagesOfFeaathersTeaserwav.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 5 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track6.jpg" alt="Track 6 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/DewTheMountains.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 6 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track7.jpg" alt="Track 7 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/Droplet_Mix_3.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 7 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track8.jpg" alt="Track 8 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/EFFORTLESS_2.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 8 Description here</p>
-      </div>
-
-      <div class="track scroll-fade">
-        <div class="track-thumbnail scroll-fade">
-          <img src="assets/track9.jpg" alt="Track 9 Thumbnail" />
-        </div>
-        <audio class="track-audio" controls>
-          <source src="assets/music/U dont want this.wav" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p class="description scroll-fade">Track 9 Description here</p>
-      </div>
-    </div>
-  </section>
 
 <section id="projects" class="scroll-fade">
   <h2 class="section-title">Projects</h2>
@@ -213,6 +184,7 @@
     <div class="project">
       <h3>Univenture</h3>
       <p>Worked on a novel game titled <em>Univenture</em>.</p>
+      <a href="https://open.spotify.com/album/1dPptSQ7NoaHB8r0Bq4etg?si=uXb_ROyIRdWD0yK_2-pd4g" target="_blank">Listen on Spotify</a>
     </div>
     <div class="project">
       <h3>The Chair</h3>
@@ -264,8 +236,8 @@
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg" alt="Twitter" />
       </a>
       <a href="https://open.spotify.com/artist/63Hy3ajCYK1jnerDcbYfGh?si=9114c553d2704ceb" target="_blank" aria-label="Spotify" class="scroll-fade">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/spotify.svg" alt="Spotify" />
-      </a>
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/spotify.svg" alt="Spotify" />
+</a>
       <a href="mailto:rostum1akio@gmail.com" target="_blank" aria-label="Email" class="scroll-fade">
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Email" />
     </a>
@@ -278,34 +250,71 @@
   </section>
 
   
+ 
 
-  <script>
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<script>
+  // Pause background music when track plays
   const bgMusic = document.getElementById("bg-music");
-  const trackAudios = document.querySelectorAll(".track-audio");
 
-  trackAudios.forEach((track) => {
-    track.addEventListener("play", () => {
-      // Pause background music if it's playing
-      if (!bgMusic.paused) {
-        bgMusic.pause();
-        bgMusic.currentTime = 0;
-      }
+  // Store currently playing waveform
+  let currentWave = null;
 
-      // Pause other tracks except the one playing
-      trackAudios.forEach((otherTrack) => {
-        if (otherTrack !== track) {
-          otherTrack.pause();
-          otherTrack.currentTime = 0;
-        }
-      });
+  // Init wavesurfers
+  const players = document.querySelectorAll('.waveform');
+  players.forEach(player => {
+    const trackUrl = player.getAttribute('data-url');
+    const durationEl = player.querySelector('.track-duration');
+    const playBtn = player.querySelector('.play-btn');
+
+    const wavesurfer = WaveSurfer.create({
+      container: player.querySelector('.wave'),
+      waveColor: '#ccc',
+      progressColor: '#555',
+      height: 80,
+      responsive: true,
+      backend: 'MediaElement',
     });
 
-    // Optional: Resume background music when a track ends
-    track.addEventListener("ended", () => {
-      bgMusic.play();
+    wavesurfer.load(trackUrl);
+
+    // Format time
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+      return `${minutes}:${secs}`;
+    }
+
+    // Update duration
+    wavesurfer.on('audioprocess', () => {
+      if (wavesurfer.isPlaying()) {
+        const time = formatTime(wavesurfer.getCurrentTime());
+        durationEl.textContent = time;
+      }
+    });
+
+    wavesurfer.on('ready', () => {
+      const time = formatTime(wavesurfer.getDuration());
+      durationEl.textContent = time;
+    });
+
+    // Play/pause logic
+    playBtn.addEventListener('click', () => {
+      // Pause other tracks and background music
+      if (currentWave && currentWave !== wavesurfer) {
+        currentWave.pause();
+      }
+      if (bgMusic && !bgMusic.paused) {
+        bgMusic.pause();
+      }
+
+      // Play or pause this one
+      wavesurfer.playPause();
+      currentWave = wavesurfer;
     });
   });
 </script>
+
 
 
   <footer class="scroll-fade">

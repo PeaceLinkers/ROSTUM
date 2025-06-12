@@ -155,55 +155,13 @@ section {
 
 
 
-.spotify-albums {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
 
-.album {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
+/*.youtube-channel {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
 }
-
-.album img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
-}
-
-.album .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease;
-}
-
-.album:hover .overlay {
-  opacity: 1;
-}
-
-.album .overlay img {
-  width: 40px;
-  height: 40px;
-  filter: invert(1);
-}
-
+*/
 
 #music {
   text-align: center;
@@ -213,54 +171,114 @@ section {
 }
 
 /* Container for all tracks */
-.tracks-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 30px; /* space between tracks */
-  justify-items: center; /* center items horizontally */
+
+
+.waveform {
+  max-width: 500px;
+  margin: 0 auto 10px;
 }
 
-/* Individual track style */
-.track {
-  width: 100%;
-  max-width: 300px; /* control thumbnail and audio size */
-  margin-bottom: 50px;
-  text-align: center;
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
-/* Thumbnail styling */
-.track-thumbnail {
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.play-btn {
+  background-color: transparent;
+  border: 2px solid #9c1616;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  color: #9c1616;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
 }
 
-.track-thumbnail img {
-  width: 100%;
-  height: 300px; /* fixed height for consistency */
-  object-fit: cover;
-  border-radius: 12px;
+.play-btn:hover {
+  background-color: #9c1616;
+  color: #fff;
 }
 
-/*
-.track-thumbnail:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(151, 16, 16, 0.4);
-}*/
-
-/* Audio player */
-.track audio {
-  width: 100%;
-  margin: 15px 0 10px;
-  display: block;
+.duration {
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #555;
 }
 
-/* Description */
-.track .description {
+.description {
+  font-family: 'Georgia', serif;
   font-size: 1rem;
-  color: #444;
+  color: #333;
   font-style: italic;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.waveform .controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.waveform .play-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.waveform .wave {
+  flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.waveform .track-duration {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .waveform .controls {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .waveform .track-duration {
+    font-size: 0.8rem;
+  }
+
+  .waveform .wave {
+    min-width: 0;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
